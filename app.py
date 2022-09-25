@@ -65,7 +65,7 @@ class TensorflowLiteClassificationModel:
         return sorted(label_to_probabilities, key=lambda element: element[1])
 
             
-model = TensorflowLiteClassificationModel("/plantdis/plantNNapp/tflite.tflite",classes)
+model = TensorflowLiteClassificationModel("Model1..tflite",classes)
 app = Flask(__name__)
 # api = Api(app)
 
