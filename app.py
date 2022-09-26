@@ -65,13 +65,13 @@ class TensorflowLiteClassificationModel:
         return sorted(label_to_probabilities, key=lambda element: element[1])
 
             
-model = TensorflowLiteClassificationModel("Model1..tflite",classes)
+model = TensorflowLiteClassificationModel("Model1.tflite",classes)
 app = Flask(__name__)
 # api = Api(app)
 
 @app.route('/')
 def index():
-    return "<h1>Disease Prediction !!</h1>"
+    return "<h1>Plant Disease Prediction !!</h1>"
     
 @app.route('/', methods=['POST'])
 
